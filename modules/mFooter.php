@@ -30,16 +30,16 @@
 								<img src="img/fb.png" alt=""> Facebook</a>
                         </li>
                         <li>
-                            <a href="#"><img src="img/tt.png" alt=""> Twitter</a>
+                            <a href="#"><img src="images/icon/tt.png" alt=""> Twitter</a>
                         </li>
                         <li>
-                            <a href="#"><img src="img/g+.png" alt=""> Google Plus</a>
+                            <a href="#"><img src="images/icon/g+.png" alt=""> Google Plus</a>
                         </li>
                         <li>
-                            <a href="#!"><img src="img/dri.png" alt=""> Dribble</a>
+                            <a href="#!"><img src="images/icon/dri.png" alt=""> Dribble</a>
                         </li>
                         <li>
-                            <a href="#!"><img src="img/pin.png" alt=""> Pinterest</a>
+                            <a href="#!"><img src="images/icon/pin.png" alt=""> Pinterest</a>
                         </li>
                     </ul>
                 </div>
@@ -49,13 +49,13 @@
                     <!-- Links -->
                     <h5 class="text-uppercase">Thông tin liên lạc</h5><br>
                     <div>
-                        <img src="img/home.png" alt="">  860, D2 Bình Thạnh, TP HCM
+                        <img src="images/icon/home.png" alt="">  860, D2 Bình Thạnh, TP HCM
                     </div><br>
                     <div>
-                        <img src="img/email.png" alt=""> Dinhtrancntt@gmail.com
+                        <img src="images/icon/email.png" alt=""> Dinhtrancntt@gmail.com
                     </div><br>
                     <div>
-                        <img src="img/phone.png" alt=""> 0975469232- 0929098750
+                        <img src="images/icon/phone.png" alt=""> 0975469232- 0929098750
                     </div>
                 </div>
                 <!-- Grid column -->
