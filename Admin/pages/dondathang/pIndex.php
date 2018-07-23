@@ -16,7 +16,7 @@ switch($k){
         include("pages/dondathang/exDathang.php");
         break;
     default:
-        DataProvider::ChangeURL("main.php?c=404");
+        DataProvider::ChangeURL("index.php?c=404");
 
 }
 ?>

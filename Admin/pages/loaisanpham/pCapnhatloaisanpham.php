@@ -8,14 +8,14 @@ if(isset($_GET["id"])){
     $row = mysqli_fetch_array($result);
 
     if($row == null){
-        DataProvider::ChangeURL("main.php?c=404");
+        DataProvider::ChangeURL("index.php?c=404");
     }
 } else {
-    DataProvider::ChangeURL("main.php?c=404");
+    DataProvider::ChangeURL("index.php?c=404");
 }
 ?>
 <div class="container">
-    <form class="form-control" action="main.php?c=3&k=301" method="post" enctype="multipart/form-data">
+    <form class="form-control" action="index.php?c=3&k=301" method="post" enctype="multipart/form-data">
         <h4 style="color: red;border-bottom: 1px solid #0b0b0b;display: inline-block;">Cập Nhật Loại Sản Phẩm Mới</h4>
         <div class="form-group col-md-6">
             <label for="tenloaisanpham"><strong><h6>Tên Loại Sản Phẩm</h6></strong></label>
@@ -31,7 +31,7 @@ if(isset($_GET["id"])){
         </div>
         <br>
         <button type="submit" class="btn btn-primary" name="capnhatloaisanpham">Cập Nhật</button>
-        <button type="button" class="btn btn-primary" onclick="location='main.php?c=3';">Hủy</button>
+        <button type="button" class="btn btn-primary" onclick="location='index.php?c=3';">Hủy</button>
     </form>
 </div>
 <br>

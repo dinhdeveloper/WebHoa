@@ -45,7 +45,7 @@ if (isset($_POST['dangky'])) {
         $result = DataProvider::ExecuteQuery($sql1);
         if ($result) {
             echo '<script>alert("Đăng ký thành công")</script>';
-            //DataProvider::ChangeURL("../../main.php");
+            //DataProvider::ChangeURL("../../index.php");
         } else {
             echo '<script>alert("Đăng ký không thành công")</script>';
         }

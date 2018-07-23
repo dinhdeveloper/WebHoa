@@ -27,6 +27,6 @@ switch($k){
         include("pages/taikhoan/exCapnhattaikhoan.php");
         break;
     default:
-        DataProvider::ChangeURL("main.php?c=404");
+        DataProvider::ChangeURL("index.php?c=404");
 }
 ?>

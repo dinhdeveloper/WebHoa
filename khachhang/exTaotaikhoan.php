@@ -8,6 +8,7 @@ if (isset($_POST['dangky'])) {
     $phone = $_POST['sodienthoai'];
     $_SESSION['SHoTenKH'] = $_POST['hovaten'];
     $_SESSION['SSodienthoaiKH'] = $_POST['sodienthoai'];
+    $_SESSION['SDiaChiKH'] = $_POST['diachi'];
     $sql = "SELECT * FROM khachhang WHERE  SoDienThoai = '$phone'";
     $result = DataProvider::ExecuteQuery($sql);
     $row = mysqli_fetch_array($result);

@@ -27,7 +27,7 @@ switch($k){
         include("pages/sanpham/exKichhoat.php");
         break;
     default:
-        DataProvider::ChangeURL("main.php?c=404");
+        DataProvider::ChangeURL("index.php?c=404");
 
 }
 ?>

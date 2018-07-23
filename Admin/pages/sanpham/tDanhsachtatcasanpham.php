@@ -11,17 +11,17 @@
     <td class="center">
         <?php
         if($biXoa == 0){
-            echo "<a href='main.php?c=4&k=402&id=$maSanPham'><img src='images/icon/active.png' /></a>";
+            echo "<a href='index.php?c=4&k=402&id=$maSanPham'><img src='images/icon/active.png' /></a>";
         } else {
-            echo "<a href='main.php?c=4&k=402&id=$maSanPham'><img src='images/icon/locked.png' /></a>";
+            echo "<a href='index.php?c=4&k=402&id=$maSanPham'><img src='images/icon/locked.png' /></a>";
         }
         ?>
     </td>
     <td>
-        <a href="main.php?c=4&k=3&id=<?php echo $maSanPham; ?>">
+        <a href="index.php?c=4&k=3&id=<?php echo $maSanPham; ?>">
             <img src="images/icon/edit.png" />
         </a>
-        <a href="main.php?c=4&k=401&id=<?php echo $maSanPham; ?>">
+        <a href="index.php?c=4&k=401&id=<?php echo $maSanPham; ?>">
             <img src="images/icon/delete.png" />
         </a>
     </td>

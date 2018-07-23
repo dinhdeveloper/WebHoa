@@ -1,5 +1,5 @@
 <div class="container">
-	<form class="form-control" action="main.php?c=4&k=201" enctype="multipart/form-data" method="post">
+	<form class="form-control" action="index.php?c=4&k=201" enctype="multipart/form-data" method="post">
 		<h4 style="color:red; border-bottom: 1px solid #0b0b0b ;display: inline-block">Tạo Sản Phẩm Mới</h4>
 		<div class="form-group col-md-6">
 			<label for="tensanpham"><strong><h6>Tên Sản Phẩm</h6></strong></label>

@@ -85,8 +85,8 @@
 						<div class="profile-usertitle-name"><?php echo $_SESSION['SSodienthoai']; ?></div>
 					</div>
 					<div class="profile-userbuttons">
-						<a href="main.php?c=103"><strong>Cập Nhật</strong></a>&nbsp;&nbsp;
-						<a href="../../../../WebHoa/Admin/Admin/dangxuat.php"><strong>Đăng xuất</strong></a>
+						<a href="index.php?c=2&k=4"><strong>Cập Nhật</strong></a>&nbsp;&nbsp;
+						<a href="../../../../WebBanHoa/Admin/Login/dangxuat.php"><strong>Đăng xuất</strong></a>
 					</div>
 				</div>
 			</div>

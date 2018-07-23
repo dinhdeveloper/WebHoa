@@ -6,8 +6,8 @@ if(isset($_GET["id"])){
 
     $sql = "UPDATE DonDatHang Set MaTinhTrangDonDatHang = $t, MaNhanVien = $maNhanVien WHERE MaDonDatHang = $id";
     DataProvider::ExecuteQuery($sql);
-    DataProvider::ChangeURL("main.php?c=5");
+    DataProvider::ChangeURL("index.php?c=5");
 } else {
-    DataProvider::ChangeURL("main.php?c=404");
+    DataProvider::ChangeURL("index.php?c=404");
 }
 ?>

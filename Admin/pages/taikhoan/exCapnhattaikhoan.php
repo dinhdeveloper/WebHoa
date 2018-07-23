@@ -43,7 +43,7 @@ Email='$email',SoDienThoai='$phone' WHERE MaNhanVien = '$id'";
         $result = DataProvider::ExecuteQuery($sql1);
         if ($result) {
             echo '<script>alert("Cập nhật thành công")</script>';
-            DataProvider::ChangeURL("main.php?c=2");
+            DataProvider::ChangeURL("index.php?c=2");
         } else {
             echo '<script>alert("Cập nhật không thành công")</script>';
         }

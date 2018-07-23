@@ -30,7 +30,7 @@ switch($k){
         include("pages/loaisanpham/exKichhoat.php");
         beak;
     default:
-        DataProvider::ChangeURL("main.php?c=404");
+        DataProvider::ChangeURL("index.php?c=404");
 
 }
 ?>

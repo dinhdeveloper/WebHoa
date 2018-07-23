@@ -1,6 +1,6 @@
 <?php
 if (!isset($_GET["id"]))
-    DataProvider::ChangeURL("main.php?c=404");
+    DataProvider::ChangeURL("index.php?c=404");
 
 $id = $_GET["id"];
 $sql = "SELECT d.MaDonDatHang, d.NgayDatHang, d.TongThanhTien, k.HoTen, k.DiaChi,
@@ -36,32 +36,59 @@ $row = mysqli_fetch_array($result);
     </div>
     <div>
         <span>Tổng Thành Tiền:</span>
-        <?php echo $row["TongThanhTien"]; ?> đồng
+        <?php echo number_format($row["TongThanhTien"]); ?> đồng
     </div>
     <button type="button" class="btn btn-primary GiaoHang">
-        <a href="main.php?c=5&k=201&t=3&id=<?php echo $id; ?>">
+        <a href="index.php?c=5&k=201&t=3&id=<?php echo $id; ?>">
             Giao Hàng
         </a>
     </button>
     <button type="button" class="btn btn-primary ThanhToan">
-        <a href="main.php?c=5&k=201&t=4&id=<?php echo $id; ?>">
+        <a href="index.php?c=5&k=201&t=4&id=<?php echo $id; ?>">
             Thanh Toán
         </a>
     </button>
     <button type="button" class="btn btn-primary Huy">
-        <a href="main.php?c=5&k=201&t=5&id=<?php echo $id; ?>">
+        <a href="index.php?c=5&k=201&t=5&id=<?php echo $id; ?>">
             Hủy Đơn Hàng
         </a>
     </button>
     <button type="button" class="btn btn-primary InDonHang">
-        <a href="#" onclick="window.print();">
+        <a href="index.php?c=5&k=2&t=5&id=<?php echo $id; ?>"
+           onclick="window.print(document.write('<fieldset>\n'+
+                   '    <legend><h5>Thông Tin Đơn Đặt Hàng</h5></legend>\n'+
+                   '    <div>\n'+
+                   '        <span>Mã ĐĐH:</span>\n'+
+                   '        <?php echo $row["MaDonDatHang"]; ?>\n'+
+                   '    </div>\n'+
+                   '    <div>\n'+
+                   '        <span>Ngày Đặt Hàng:</span>\n'+
+                   '        <?php echo $row["NgayDatHang"]; ?>\n'+
+                   '    </div>\n'+
+                   '    <div>\n'+
+                   '        <span>Tên Khách Hàng:</span>\n'+
+                   '        <?php echo $row["HoTen"]; ?>\n'+
+                   '    </div>\n'+
+                   '    <div>\n'+
+                   '        <span>Số Số Điện Thoại:</span>\n'+
+                   '        <?php echo $row["SoDienThoai"]; ?>\n'+
+                   '    </div>\n'+
+                   '    <div>\n'+
+                   '        <span>Địa Chỉ Giao Hàng:\n'+
+                   '     k <?php echo $row["DiaChi"]; ?>\n'+
+                   '    </div>\n'+
+                   '    <div>\n'+
+                   '        <span>Tổng Thành Tiền:</span>\n'+
+                   '        <?php echo $row["TongThanhTien"]; ?> đồng\n'+
+                   '    </div>\n'+
+                   '</fieldset>'));">
             In Đơn Hàng
         </a>
     </button>
 </fieldset>
 <?php
 // Xử lý cập nhật trạng thái đang xử lý cho đơn đặt hàng
-if($row["MaTinhTrangDonDatHang"] == 1){
+if ($row["MaTinhTrangDonDatHang"] == 1) {
     $maNhanVien = $_SESSION["SMaNhanVien"];
     $sql = "UPDATE DonDatHang Set MaTinhTrangDonDatHang = 2, MaNhanVien = $maNhanVien WHERE MaDonDatHang = $id";
     DataProvider::ExecuteQuery($sql);
@@ -93,7 +120,7 @@ if($row["MaTinhTrangDonDatHang"] == 1){
                     <img src="images/sanpham/<?php echo $row["HinhURL"]; ?>" height="60" width="60"/>
                 </td>
                 <td><?php echo $row["SoLuong"]; ?></td>
-                <td><?php echo $row["GiaBan"]; ?></td>
+                <td><?php echo number_format($row["GiaBan"]); ?></td>
             </tr>
             <?php
         }

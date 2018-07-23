@@ -1,6 +1,6 @@
 <table>
 	<div class="container">
-		<form class="form-login" action="main.php?c=2&k=103" method="post" enctype="multipart/form-data">
+		<form class="form-login" action="index.php?c=2&k=103" method="post" enctype="multipart/form-data">
 			<h4 class="form-login-heading" style="color: red"><strong>Cập Nhật Tài Khoản</strong></h4>
 			<p style="color:#F00; padding-top:20px;"
 			   align="center"></p>

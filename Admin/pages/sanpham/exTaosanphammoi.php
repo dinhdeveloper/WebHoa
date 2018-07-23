@@ -30,10 +30,10 @@ if (isset($_POST["taosanpham"])) {
         $result = DataProvider::ExecuteQuery($sql);
         if ($result) {
             echo '<script>alert("Tạo SP thành công")</script>';
-            DataProvider::ChangeURL("main.php?c=4");
+            DataProvider::ChangeURL("index.php?c=4");
         } else {
             echo '<script>alert("Tạo SP không thành công")</script>';
-            DataProvider::ChangeURL("main.php?c=4&k=2");
+            DataProvider::ChangeURL("index.php?c=4&k=2");
         }
     }
 }

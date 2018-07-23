@@ -1,108 +1,122 @@
 <?php
-    session_start();
-    include("../../WebHoa/libs/database.php");
-    if (isset($_POST['login'])) {
-        $adminusername = $_POST['tendangnhap'];
-        $pass = $_POST['matkhau'];
-        //$sql = "SELECT MaNhanVien FROM nhanvien WHERE TenDangNhap='$ddminusername' AND MatKhau='$pass' ";
-        $sql = "SELECT * FROM nhanvien WHERE TenDangNhap = '$adminusername' AND MatKhau = '$pass'";
-        $result = DataProvider::ExecuteQuery($sql);
-//        $sql1 = "SELECT MaNhanVien FROM nhanvien WHERE TenDangNhap='$ddminusername' AND MatKhau='$pass' ";
-//       $result1 =  DataProvider::ExecuteQuery($sql);
-        $num = mysqli_fetch_array($result);
-        if ($num > 0) {
-            $extra = "main.php";
-            $_SESSION['SMaNhanVien'] = $num['MaNhanVien'];
-            $_SESSION['Stendangnhap'] = $_POST['tendangnhap'];
-            $_SESSION['SHoTen'] = $num['HoTen'];
-            $_SESSION['SHinh'] = $num['HinhNhanVien'];
-            $_SESSION['SEmail'] = $num['Email'];
-            $_SESSION['SSodienthoai'] = $num['SoDienThoai'];
-            $_SESSION['SQuyenNguoiDung'] = $num['QuyenNguoiDung'];
-            echo "<script>window.location.href='../Admin/" . $extra . "'</script>";
-            exit();
-        } else {
-            $_SESSION['action1'] = "Tên đăng nhập hoặc mật khẩu sai";
-            $extra = "index.php";
-            echo "<script>window.location.href='" . $extra . "'</script>";
-            exit();
-        }
-    }
+/**
+ * Created by PhpStorm.
+ * User: Dinht
+ * Date: 6/22/2018
+ * Time: 1:07 AM
+ */
+session_start();
+include '../libs/database.php';
+include 'Login/kiemtradangnhap.php';
+check_login();
+//định nghĩa biến cho từng trang:
+$c = 1;
+
+if (isset($_GET['c'])) {
+    $c = $_GET['c'];
+}
+// session_destroy();
 ?>
+
 <!DOCTYPE html>
-<html lang="vn">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="Dashboard">
-	<meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-	<script type="text/javascript" src="../../WebHoa/js/jquery/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="../../WebHoa/js/jquery/jquery-3.3.1.js"></script>
-	<title>Đăng nhập Admin</title>
-	<link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
-	<link href="assets/css/style.css" rel="stylesheet">
-	<link href="assets/css/style-responsive.css" rel="stylesheet">
-	<link rel="icon" href="../../WebHoa/images/favicon/favicon-32x32.png" sizes="32x32">
-	<script>
-		$(document).ready(function () {
-			$("#username").blur(function () {
-				var u = $(this).val();
-				$.ajax({
-					url: "Admin/textdn.php",
-					type: "post",
-					dataType: "text",
-					data:{
-						un:u,
-					},
-					success: function (data) {
-						if (data == 1)
-						{
-							$("#kiemtrauser").css("color", "blue").html("Hợp lệ");
-						}
-						else {
-							$("#kiemtrauser").css("color", "red").html("Không hợp lệ");
-						}
-					}
-				})
-			});
-			$("#password").blur(function () {
-				var value = $(this).val();
-				if (value === ''){
-					$("#kiemtrapass").css("color", "red").html("Vui lòng nhập mật khẩu");
-				}
-			});
-		});
-	</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description"
+          content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+    <meta name="keywords"
+          content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+    <title>Trang Quản Trị</title>
+    <!-- Favicons-->
+    <link rel="icon" href="../images/favicon/favicon-32x32.png" sizes="32x32">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="../images/favicon/apple-touch-icon-152x152.png">
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#00bcd4">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <!-- For Windows Phone -->
+    <!-- CORE CSS-->
+    <link href="css/themes/fixed-menu/materialize.css" type="text/css" rel="stylesheet">
+    <link href="css/themes/fixed-menu/style.css" type="text/css" rel="stylesheet">
+    <!-- Custome CSS-->
+    <link href="css/custom/custom.css" type="text/css" rel="stylesheet">
+    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+    <link href="vendors/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet">
+    <link href="vendors/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet">
+    <link href="vendors/flag-icon/css/flag-icon.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.3.1.min.js">
+    <link rel="stylesheet" type="text/css" href="css/admin.css" />
 </head>
 <body>
-<div id="login-page">
-	<div class="container">
-		<form class="form-login" action="" method="post">
-			<h2 class="form-login-heading"><strong>ĐĂNG NHẬP</strong></h2>
-			<p style="color:#F00; padding-top:20px;"
-			   align="center"></p> <!--<?php //echo $_SESSION['action1']; ?><?php //echo $_SESSION['action1'] = ""; ?>-->
-			<div class="login-wrap">
-				<input type="text" name="tendangnhap" class="form-control" id="username" placeholder="Tên đăng nhập" autofocus>
-				<br>
-				<div id="kiemtrauser"></div>
-				<br>
-				<input type="password" name="matkhau" class="form-control" id="password" placeholder="Mật khẩu"><br>
-				<div id="kiemtrapass"></div><br>
-				<button type="submit" class="btn btn-primary" name="login"
-						style="margin-left: 190px">Đăng Nhập</button>
-<!--				<a href="../pages/taikhoan/pTaotaikhoanadmin.php" style="text-align: center">Tạo tài khoản</a>-->
-			</div>
-		</form>
-	
-	</div>
+<?php
+include_once 'modules/header.php';
+include_once 'modules/menu_left.php';
+//include_once 'modules/menu_content.php';
+?>
+<div id="content">
+    <?php
+
+    if (isset($_SESSION["SMaNhanVien"]) == false) {
+        $c = 0;
+    }
+    switch ($c) {
+        case 0:
+            include("Error/pError.php");
+            break;
+        case 1:
+            include("modules/menu_content.php");
+            break;
+        case 2:
+            include ("pages/taikhoan/pIndex.php"); //quản lý tài khoản
+        break;
+        case 3:
+            include ("pages/loaisanpham/pIndex.php"); //quản lý loại sản phẩm
+            break;
+        case 4:
+            include ("pages/sanpham/pIndex.php"); //quản lý sản phẩm
+        break;
+        case 5:
+            include ("pages/dondathang/pIndex.php"); // quản lý đơn đặt hàng
+        break;
+        // khach hang:
+        case 601:
+            include ("pages/khachhang/pDanhsachtaikhoankhachhang.php");
+            break;
+        default:
+            include("Error/pError.php");
+    }
+
+    ?>
 </div>
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
-<script>
-	$.backstretch("assets/img/login-bg.jpg", {speed: 500});
-</script>
+<!-- jQuery Library -->
+<script type="text/javascript" src="vendors/jquery-3.2.1.min.js"></script>
+<!--materialize js-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<!--scrollbar-->
+<script type="text/javascript" src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<!-- chartjs -->
+<script type="text/javascript" src="vendors/chartjs/chart.min.js"></script>
+<!-- sparkline -->
+<script type="text/javascript" src="vendors/sparkline/jquery.sparkline.min.js"></script>
+<!-- google map api -->
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAZnaZBXLqNBRXjd-82km_NO7GUItyKek"></script>
+<!--jvectormap-->
+<script type="text/javascript" src="vendors/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script type="text/javascript" src="vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script type="text/javascript" src="vendors/jvectormap/vectormap-script.js"></script>
+<!--google map-->
+<script type="text/javascript" src="js/scripts/google-map-script.js"></script>
+<!--plugins.js - Some Specific JS codes for Plugin Settings-->
+<script type="text/javascript" src="js/plugins.js"></script>
+<!--card-advanced.js - Page specific JS-->
+<script type="text/javascript" src="js/scripts/dashboard-analytics.js"></script>
+<!--custom-script.js - Add your own theme custom JS-->
+<script type="text/javascript" src="js/custom-script.js"></script>
 </body>
 </html>
+
+

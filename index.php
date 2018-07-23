@@ -2,7 +2,7 @@
     session_start ();
     include 'libs/database.php';
 	include("libs/GioHang.php");
-// session_destroy();
+     //session_destroy();
 	if(isset($_SESSION["GioHang"]) == false){
 		$gioHang = new GioHang();
 		$_SESSION["GioHang"] = serialize($gioHang);

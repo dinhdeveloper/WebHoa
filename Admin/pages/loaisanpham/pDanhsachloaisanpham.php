@@ -1,4 +1,4 @@
-<form method="post" style="padding: 25px" action="main.php?c=3&k=2">
+<form method="post" style="padding: 25px" action="index.php?c=3&k=2">
 	<h4 style="color: red">Danh Sách Loại Sản Phẩm</h4>
 	<table class="table">
 		<thead class="thead-light">

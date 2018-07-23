@@ -37,10 +37,10 @@ if (isset($_POST['capnhatsanpham'])) {
         $result = DataProvider::ExecuteQuery($sql);
         if ($result) {
             echo '<script>alert("Cập nhật thành công")</script>';
-            DataProvider::ChangeURL("main.php?c=4");
+            DataProvider::ChangeURL("index.php?c=4");
         } else {
             echo '<script>alert("Cập nhật không thành công")</script>';
-            DataProvider::ChangeURL("main.php?c=4");
+            DataProvider::ChangeURL("index.php?c=4");
         }
     }
 }

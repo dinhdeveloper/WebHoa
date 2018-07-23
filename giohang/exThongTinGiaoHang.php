@@ -5,8 +5,6 @@
  * Date: 7/5/2018
  * Time: 7:36 PM
  */
-
-
 if (isset($_POST['hovaten'])== false){
     //DataProvider::ChangeURL ("index.php?c=404");
 }

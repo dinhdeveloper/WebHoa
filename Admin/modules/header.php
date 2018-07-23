@@ -7,7 +7,7 @@
                 <ul class="left">
                     <li>
                         <h1 class="logo-wrapper">
-                            <a href="main.php" class="brand-logo darken-1">
+                            <a href="index.php" class="brand-logo darken-1">
                                 <img src="modules/logo/materialize-logo-color.png" alt="materialize logo">
                                 <span class="logo-text hide-on-med-and-down">FLOWER</span>
                             </a>
@@ -114,7 +114,7 @@
                 <!-- profile-dropdown -->
                 <ul id="profile-dropdown" class="dropdown-content">
                     <li>
-                        <a href="main.php?c=2&k=3" class="grey-text text-darken-1">
+                        <a href="index.php?c=2&k=3" class="grey-text text-darken-1">
                             <i class="material-icons">face</i> Thông tin cá nhân</a>
                     </li>
                     <li>
@@ -131,7 +131,7 @@
                             <i class="material-icons">lock_outline</i> Lock</a>
                     </li>
                     <li>
-                        <a href="../../../WebHoa/Admin/Admin/dangxuat.php" class="grey-text text-darken-1">
+                        <a href="../../../WebBanHoa/Admin/Login/dangxuat.php" class="grey-text text-darken-1">
                             <i class="material-icons">keyboard_tab</i> Đăng xuất</a>
                     </li>
                 </ul>

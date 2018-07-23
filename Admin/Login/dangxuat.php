@@ -4,7 +4,7 @@
     $_SESSION['Stendangnhap']=="";
     session_destroy();
     echo '<script>alert("Bạn đã đăng xuất thành công...")</script>';
-    DataProvider::ChangeURL("../index.php");
+    DataProvider::ChangeURL("index.php");
     $_SESSION['action1']="Vui lòng đăng nhập lại";
 ?>
 <script language="javascript">

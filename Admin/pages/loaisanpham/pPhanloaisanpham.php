@@ -43,13 +43,13 @@
                     <td style="text-align: center"><?php echo $row["SoLuongBan"]; ?></td>
                     <td style="text-align: center"><?php echo $row["SoLuotXem"]; ?></td>
                     <td style="text-align: center"><img src="modules/logo/active.png" alt=""><?php //echo $row["BiXoa"]; ?></td>
-                    <td><a href="main.php?c=4&k=3&id=<?php echo $row["MaSanPham"]?>"><img src="modules/logo/edit.png"></a></td>
+                    <td><a href="index.php?c=4&k=3&id=<?php echo $row["MaSanPham"]?>"><img src="modules/logo/edit.png"></a></td>
                 </tr>
                 <?php
             }
         ?>
     </table>
-	<a href="main.php?c=3">Quay lại</a>
+	<a href="index.php?c=3">Quay lại</a>
 </form>
 <br>
 <br>

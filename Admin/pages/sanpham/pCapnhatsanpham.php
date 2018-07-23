@@ -8,7 +8,7 @@ if(isset($_GET["id"])){
     $row = mysqli_fetch_array($result);
 
     if($row == null){
-        DataProvider::ChangeURL("main.php?c=404");
+        DataProvider::ChangeURL("index.php?c=404");
     }
     $tenSanPham = $row["TenSanPham"];
     $maLoaiSanPham_goc = $row["MaLoaiSanPham"];
@@ -17,11 +17,11 @@ if(isset($_GET["id"])){
     $hinhURL = $row["HinhURL"];
 
 } else {
-    DataProvider::ChangeURL("main.php?c=404");
+    DataProvider::ChangeURL("index.php?c=404");
 }
 ?>
 <div class="container">
-    <form class="form-control" action="main.php?c=4&k=301" method="post" enctype="multipart/form-data">
+    <form class="form-control" action="index.php?c=4&k=301" method="post" enctype="multipart/form-data">
         <h4 style="color: red;border-bottom: 1px solid #0b0b0b;display: inline-block;">Cập Nhật Sản Phẩm</h4>
         <input type="hidden" name="masanpham" value="<?php echo $id; ?>" />
         <div class="form-group col-md-6">
@@ -66,7 +66,7 @@ if(isset($_GET["id"])){
         </div>
         <br>
         <button type="submit" class="btn btn-primary" name="capnhatsanpham">Cập Nhật</button>
-        <button type="button" class="btn btn-primary" onclick="location='main.php?c=4';">Hủy</button>
+        <button type="button" class="btn btn-primary" onclick="location='index.php?c=4';">Hủy</button>
     </form>
 </div>
 <br>

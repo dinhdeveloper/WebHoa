@@ -93,7 +93,7 @@ $sodienthoai = $row["SoDienThoai"];
     </form>
 <?php
 //Xóa thông tin giỏ hàng sau khi đã đặt hàng
-	unset($_SESSION["GioHang"]);
-	$_SESSION["TongThanhTien"] = 0;
+unset($_SESSION["GioHang"]);
+$_SESSION["TongThanhTien"] = 0;
 //DataProvider::ChangeURL("index.php?c=7&id=$maDonDatHang");
 ?>
