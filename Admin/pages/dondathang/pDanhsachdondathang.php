@@ -14,14 +14,24 @@
 		</thead>
         <?php
         $sql = "SELECT  MaDonDatHang, HoTen, DiaChi, SoDienThoai, TenTinhTrangDonDatHang, MaTinhTrangDonDatHang, HoTenNhanVien
-        FROM ((SELECT MaDonDatHang, KhachHang.HoTen, KhachHang.DiaChi, KhachHang.SoDienThoai, TenTinhTrangDonDatHang, DonDatHang.MaTinhTrangDonDatHang, '' As HoTenNhanVien
-        FROM KhachHang, DonDatHang, TinhTrangDonDatHang, NhanVien 
-        WHERE KhachHang.MaKhachHang = DonDatHang.MaKhachHang AND DonDatHang.MaTinhTrangDonDatHang = TinhTrangDonDatHang.MaTinhTrangDonDatHang AND DonDatHang.MaNhanVien Is NULL
+        FROM ((SELECT MaDonDatHang, KhachHang.HoTen, KhachHang.DiaChi, KhachHang.SoDienThoai,
+        TenTinhTrangDonDatHang, DonDatHang.MaTinhTrangDonDatHang, '' As HoTenNhanVien
+        FROM KhachHang, DonDatHang, TinhTrangDonDatHang, NhanVien
+        WHERE KhachHang.MaKhachHang = DonDatHang.MaKhachHang AND DonDatHang.MaTinhTrangDonDatHang =
+        TinhTrangDonDatHang.MaTinhTrangDonDatHang AND DonDatHang.MaNhanVien Is NULL
         ORDER BY TinhTrangDonDatHang.MaTinhTrangDonDatHang) UNION
-        (SELECT MaDonDatHang, KhachHang.HoTen, KhachHang.DiaChi, KhachHang.SoDienThoai, TenTinhTrangDonDatHang, DonDatHang.MaTinhTrangDonDatHang, NhanVien.HoTen As HoTenNhanVien
-        FROM KhachHang, DonDatHang, TinhTrangDonDatHang, NhanVien 
-        WHERE KhachHang.MaKhachHang = DonDatHang.MaKhachHang AND DonDatHang.MaTinhTrangDonDatHang = TinhTrangDonDatHang.MaTinhTrangDonDatHang AND DonDatHang.MaNhanVien = NhanVien.MaNhanVien
+        (SELECT MaDonDatHang, KhachHang.HoTen, KhachHang.DiaChi, KhachHang.SoDienThoai,
+         TenTinhTrangDonDatHang, DonDatHang.MaTinhTrangDonDatHang, NhanVien.HoTen As HoTenNhanVien
+        FROM KhachHang, DonDatHang, TinhTrangDonDatHang, NhanVien
+        WHERE KhachHang.MaKhachHang = DonDatHang.MaKhachHang AND DonDatHang.MaTinhTrangDonDatHang =
+        TinhTrangDonDatHang.MaTinhTrangDonDatHang AND DonDatHang.MaNhanVien = NhanVien.MaNhanVien
         ORDER BY TinhTrangDonDatHang.MaTinhTrangDonDatHang)) t";
+//        $sql = "SELECT dondathang.MaDonDatHang, khachhang.HoTen, khachhang.DiaChi, khachhang.SoDienThoai,
+//                tinhtrangdondathang.TenTinhTrangDonDatHang,dondathang.MaTinhTrangDonDatHang,nhanvien.HoTen as HoTenNhanVien
+//                FROM dondathang,khachhang,tinhtrangdondathang,nhanvien
+//                WHERE (dondathang.MaKhachHang = khachhang.MaKhachHang) AND
+//                (dondathang.MaTinhTrangDonDatHang= tinhtrangdondathang.MaTinhTrangDonDatHang) AND
+//                dondathang.MaTinhTrangDonDatHang";
         $result = DataProvider::ExecuteQuery($sql);
         while($row = mysqli_fetch_array($result)){
             $maDonDatHang = $row["MaDonDatHang"];

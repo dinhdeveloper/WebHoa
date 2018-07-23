@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include("../../../WebBanHoa/libs/database.php");
+    include("../../../WebHoa/libs/database.php");
     if (isset($_POST['login'])) {
         $adminusername = $_POST['tendangnhap'];
         $pass = $_POST['matkhau'];

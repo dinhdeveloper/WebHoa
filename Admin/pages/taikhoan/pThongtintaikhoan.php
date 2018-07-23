@@ -86,7 +86,7 @@
 					</div>
 					<div class="profile-userbuttons">
 						<a href="index.php?c=2&k=4"><strong>Cập Nhật</strong></a>&nbsp;&nbsp;
-						<a href="../../../../WebBanHoa/Admin/Login/dangxuat.php"><strong>Đăng xuất</strong></a>
+						<a href="../../../../WebHoa/Admin/Login/dangxuat.php"><strong>Đăng xuất</strong></a>
 					</div>
 				</div>
 			</div>

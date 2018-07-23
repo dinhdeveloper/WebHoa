@@ -1,4 +1,4 @@
-<br><div class="" style="background-color: #1C252C">
+﻿<br><div class="" style="background-color: #1C252C">
     <!-- Footer -->
     <footer class="page-footer font-small blue pt-4 mt-4" style="color: white">
         <!-- Footer Links -->
@@ -27,7 +27,7 @@
                     <ul class="list-unstyled">
                         <li >
                             <a target="_blank" href="https://www.facebook.com/canhdinhit">
-								<img src="img/fb.png" alt=""> Facebook</a>
+								<img src="images/icon/fb.png" alt=""> Facebook</a>
                         </li>
                         <li>
                             <a href="#"><img src="images/icon/tt.png" alt=""> Twitter</a>
