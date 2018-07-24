@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17745fc1-6028-497f-988b-1f89c4befed7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/js/hieuungtuyetroi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/modules/menu_content.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/modules/menu_content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Error.php" beforeDir="false" afterPath="$PROJECT_DIR$/Error.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Login/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/modules/menu_left.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/modules/menu_left.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/mFooter.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mFooter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/mHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mHeader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pDanhmucsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pDanhmucsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pSanphambannhieunhat.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pSanphambannhieunhat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pSanphamxemnhieunhat.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pSanphamxemnhieunhat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/mHotrokhachhang.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mHotrokhachhang.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,14 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mFooter.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/mFooter.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Admin/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="86" column="20" lean-forward="true" selection-start-line="84" selection-start-column="10" selection-end-line="86" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -55,7 +48,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Admin/pages/sanpham/pTaosanphammoi.php" />
         <option value="$PROJECT_DIR$/Admin/pages/sanpham/exTaosanphammoi.php" />
         <option value="$PROJECT_DIR$/Admin/pages/taikhoan/pDanhsachtaikhoan.php" />
         <option value="$PROJECT_DIR$/Admin/pages/sanpham/exKichhoat.php" />
@@ -68,7 +60,6 @@
         <option value="$PROJECT_DIR$/Admin/pages/loaisanpham/tDanhsachloaisanpham.php" />
         <option value="$PROJECT_DIR$/Admin/pages/loaisanpham/pDanhsachloaisanpham.php" />
         <option value="$PROJECT_DIR$/pages/pXemthemsanpham.php" />
-        <option value="$PROJECT_DIR$/Admin/modules/menu_left.php" />
         <option value="$PROJECT_DIR$/Admin/pages/dondathang/exDathang.php" />
         <option value="$PROJECT_DIR$/Admin/pages/dondathang/pIndex.php" />
         <option value="$PROJECT_DIR$/Admin/css/admin.css" />
@@ -77,7 +68,6 @@
         <option value="$PROJECT_DIR$/dangnhap/kiemtradangnhap.php" />
         <option value="$PROJECT_DIR$/dangnhap/dangnhap.php" />
         <option value="$PROJECT_DIR$/modules/mMenu_left.php" />
-        <option value="$PROJECT_DIR$/modules/mHotrokhachhang.php" />
         <option value="$PROJECT_DIR$/khachhang/pIndex.php" />
         <option value="$PROJECT_DIR$/khachhang/pDangnhap.php" />
         <option value="$PROJECT_DIR$/khachhang/pTaotaikhoan.php" />
@@ -90,7 +80,6 @@
         <option value="$PROJECT_DIR$/giohang/pdathang.php" />
         <option value="$PROJECT_DIR$/Admin/pages/dondathang/pChitietdondathang.php" />
         <option value="$PROJECT_DIR$/Admin/main.php" />
-        <option value="$PROJECT_DIR$/Admin/Login/index.php" />
         <option value="$PROJECT_DIR$/Admin/modules/header.php" />
         <option value="$PROJECT_DIR$/Admin/pages/taikhoan/pThongtintaikhoan.php" />
         <option value="$PROJECT_DIR$/Admin/pages/dondathang/tDanhSachDonDatHangChuaXuLy.php" />
@@ -105,7 +94,11 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/modules/mHeader.php" />
         <option value="$PROJECT_DIR$/pages/pDanhmucsanpham.php" />
+        <option value="$PROJECT_DIR$/modules/mHotrokhachhang.php" />
         <option value="$PROJECT_DIR$/modules/mFooter.php" />
+        <option value="$PROJECT_DIR$/Admin/Login/index.php" />
+        <option value="$PROJECT_DIR$/Admin/modules/menu_left.php" />
+        <option value="$PROJECT_DIR$/Admin/index.php" />
       </list>
     </option>
   </component>
@@ -132,7 +125,7 @@
     </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -157,7 +150,19 @@
             <path>
               <item name="WebHoa" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebHoa" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebHoa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebHoa" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebHoa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebHoa" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebHoa" type="b2602c69:ProjectViewProjectNode" />
@@ -239,12 +244,12 @@
       <workItem from="1532358643602" duration="3000" />
       <workItem from="1532360977616" duration="9073000" />
       <workItem from="1532371972748" duration="1522000" />
-      <workItem from="1532396643368" duration="3977000" />
+      <workItem from="1532396643368" duration="8627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109566000" />
+    <option name="totallyTimeSpent" value="114216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -284,13 +289,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Admin/pages/sanpham/pCapnhatsanpham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="68" column="84" selection-start-line="68" selection-start-column="84" selection-end-line="68" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/gritter/js/jquery.gritter.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -298,13 +296,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="15" column="25" selection-end-line="21" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mHotrokhachhang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -460,13 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-718">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Admin/Login/dangxuat.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -477,24 +461,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/modules/menu_left.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-526">
-          <caret line="154" column="40" selection-start-line="143" selection-start-column="43" selection-end-line="154" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Admin/pages/taikhoan/pThongtintaikhoan.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="88" column="48" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Login/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="2" column="49" lean-forward="true" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -599,13 +569,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mHotrokhachhang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/mFooter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+        <state relative-caret-position="48">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/Login/kiemtradangnhap.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/Login/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/modules/menu_left.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3720">
+          <caret line="155" column="29" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="86" column="20" lean-forward="true" selection-start-line="84" selection-start-column="10" selection-end-line="86" selection-end-column="20" />
         </state>
       </provider>
     </entry>

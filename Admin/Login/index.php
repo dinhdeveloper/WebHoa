@@ -18,7 +18,7 @@
             $_SESSION['SHinh'] = $num['HinhNhanVien'];
             $_SESSION['SEmail'] = $num['Email'];
             $_SESSION['SSodienthoai'] = $num['SoDienThoai'];
-            $_SESSION['SQuyenNguoiDung'] = $num['QuyenNguoiDung'];
+            $_SESSION['SQuyenAdmin'] = $num['QuyenAdmin'];
             echo "<script>window.location.href='../" . $extra . "'</script>";
             exit();
         } else {

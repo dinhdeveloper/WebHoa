@@ -1,9 +1,3 @@
-<?php
-$sql = "SELECT * FROM nhanvien ";
-$result = DataProvider::ExecuteQuery($sql);
-check_login();
-$row = mysqli_fetch_array($result);
-?>
 <div id="main">
     <!-- START WRAPPER -->
     <div class="wrapper">
@@ -52,7 +46,9 @@ $row = mysqli_fetch_array($result);
                                         </a>
                                     </li>
                                     <?php
-                                    if ($_SESSION['SQuyenNguoiDung'] == 0) {
+//                                    $row1 = DataProvider::ExecuteQuery($sql);
+//                                    $result = mysqli_fetch_row($sql1);
+                                    if ($_SESSION['SQuyenAdmin'] == 1) {
                                         ?>
                                         <li>
                                             <a href="index.php?c=2">
@@ -79,18 +75,12 @@ $row = mysqli_fetch_array($result);
                                             <span> Danh sách loại sản phẩm</span>
                                         </a>
                                     </li>
-                                    <?php
-                                    if ($_SESSION['SQuyenNguoiDung'] == 1) {
-                                        ?>
-                                        <li>
-                                            <a href="index.php?c=3&k=2">
-                                                <i class="material-icons">keyboard_arrow_right</i>
-                                                <span> Tạo loại sản phẩm mới</span>
-                                            </a>
-                                        </li>
-                                        <?php
-                                    }
-                                    ?>
+                                    <li>
+                                        <a href="index.php?c=3&k=2">
+                                            <i class="material-icons">keyboard_arrow_right</i>
+                                            <span> Tạo loại sản phẩm mới</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>  <!-- danh mục-->
@@ -107,18 +97,12 @@ $row = mysqli_fetch_array($result);
                                             <span>Danh sách tất cả sản phẩm</span>
                                         </a>
                                     </li>
-                                    <?php
-                                    if ($_SESSION['SQuyenNguoiDung'] == 1) {
-                                        ?>
-                                        <li>
-                                            <a href="index.php?c=4&k=2">
-                                                <i class="material-icons">keyboard_arrow_right</i>
-                                                <span> Tạo sản phẩm</span>
-                                            </a>
-                                        </li>
-                                        <?php
-                                    }
-                                    ?>
+                                    <li>
+                                        <a href="index.php?c=4&k=2">
+                                            <i class="material-icons">keyboard_arrow_right</i>
+                                            <span> Tạo sản phẩm</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -135,24 +119,6 @@ $row = mysqli_fetch_array($result);
                                             <span>Danh sách đơn đặt hàng</span>
                                         </a>
                                     </li>
-<!--                                    <li>-->
-<!--                                        <a href="index.php?c=402">-->
-<!--                                            <i class="material-icons">keyboard_arrow_right</i>-->
-<!--                                            <span>Chi tiết đơn đặt hàng</span>-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                    --><?php
-//                                    if ($_SESSION['SQuyenNguoiDung'] == 1) {
-//                                        ?>
-<!--                                        <li>-->
-<!--                                            <a href="#">-->
-<!--                                                <i class="material-icons">keyboard_arrow_right</i>-->
-<!--                                                <span>Cập nhật đơn đặt hàng</span>-->
-<!--                                            </a>-->
-<!--                                        </li>-->
-<!--                                        --><?php
-//                                    }
-//                                    ?>
                                 </ul>
                             </div>
                         </li>
@@ -183,22 +149,6 @@ $row = mysqli_fetch_array($result);
                                         <a href="#">
                                             <i class="material-icons">keyboard_arrow_right</i>
                                             <span> Doanh thu theo năm</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="bold">
-                            <a class="collapsible-header waves-effect waves-cyan">
-                                <i class="material-icons">dashboard</i>
-                                <span class="nav-text">Tài Khoản Khách Hàng</span>
-                            </a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="index.php?c=601">
-                                            <i class="material-icons">keyboard_arrow_right</i>
-                                            <span>DS Tài Khoản Khách Hàng</span>
                                         </a>
                                     </li>
                                 </ul>

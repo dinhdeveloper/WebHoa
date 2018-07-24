@@ -82,9 +82,9 @@ include_once 'modules/menu_left.php';
             include ("pages/dondathang/pIndex.php"); // quản lý đơn đặt hàng
         break;
         // khach hang:
-        case 601:
-            include ("pages/khachhang/pDanhsachtaikhoankhachhang.php");
-            break;
+//        case 601:
+//            include ("pages/khachhang/pDanhsachtaikhoankhachhang.php");
+//            break;
         default:
             include("Error/pError.php");
     }

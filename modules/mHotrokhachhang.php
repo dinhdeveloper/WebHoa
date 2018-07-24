@@ -38,7 +38,7 @@
                         </div>
                         <div class="col-9">
                             <h6><strong>Hotline trực tuyến</strong></h6>
-                            <p>0975469232- 0929098750</p>
+                            <p>0975469232 - 0929098750</p>
                         </div>
                     </div>
                 </div>

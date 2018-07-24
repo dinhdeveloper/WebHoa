@@ -1,8 +1,8 @@
 ﻿<div class="mini-icon" style=" position: fixed; bottom: 20px; left: 0;z-index: 999999 ">
-    <img src="images/icon/mess.png" alt="">
-    <img src="images/icon/map.png" alt="">
-    <img src="images/icon/sms.png" alt="">
-    <img src="images/icon/hotline.png" alt="">
+    <a href="#"><img src="images/icon/mess.png" alt=""></a>
+    <a href="#"><img src="images/icon/map.png" alt=""></a>
+    <a href="#"><img src="images/icon/sms.png" alt=""></a>
+    <a href="#"><img src="images/icon/hotline.png" alt=""></a>
 </div>
 <br><div class="" style="background-color: #1C252C">
     <!-- Footer -->
@@ -41,12 +41,12 @@
                         <li>
                             <a href="#"><img src="images/icon/g+.png" alt=""> Google Plus</a>
                         </li>
-                        <li>
-                            <a href="#!"><img src="images/icon/dri.png" alt=""> Dribble</a>
-                        </li>
-                        <li>
-                            <a href="#!"><img src="images/icon/pin.png" alt=""> Pinterest</a>
-                        </li>
+<!--                        <li>-->
+<!--                            <a href="#!"><img src="images/icon/dri.png" alt=""> Dribble</a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#!"><img src="images/icon/pin.png" alt=""> Pinterest</a>-->
+<!--                        </li>-->
                     </ul>
                 </div>
                 <!-- Grid column -->
@@ -61,7 +61,13 @@
                         <img src="images/icon/email.png" alt=""> Dinhtrancntt@gmail.com
                     </div><br>
                     <div>
-                        <img src="images/icon/phone.png" alt=""> 0975469232- 0929098750
+                        <img src="images/icon/phone.png" alt="">
+                        <a href="tel:0975469232">
+                            0975469232
+                        </a>
+                        <a href="tel:0975469232">
+                            - 0975469232
+                        </a>
                     </div>
                 </div>
                 <!-- Grid column -->
