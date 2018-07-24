@@ -2,12 +2,10 @@
     
     function check_login ()
     {
-        if (strlen($_SESSION['Stendangnhap']) == 0) {
-            $host = $_SERVER['HTTP_HOST'];
-            $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-            $extra = "index.php";
+        if (strlen($_SESSION['Stendangnhap']) == 0) { // kiểm tra chiều dài của chuổi sesion
+            $extra = "Login/index.php";
             $_SESSION["Stendangnhap"] = "";
-            header("Location: http://$host$uri/$extra");
+            header("Location: http://localhost/WebHoa/Admin/$extra");
             return 0;
         }
     }

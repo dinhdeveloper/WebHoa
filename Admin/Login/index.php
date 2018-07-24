@@ -11,7 +11,6 @@
 //       $result1 =  DataProvider::ExecuteQuery($sql);
         $num = mysqli_fetch_array($result);
         if ($num > 0) {
-            $extra = "index.php";
             $_SESSION['SMaNhanVien'] = $num['MaNhanVien'];
             $_SESSION['Stendangnhap'] = $_POST['tendangnhap'];
             $_SESSION['SHoTen'] = $num['HoTen'];
@@ -19,12 +18,11 @@
             $_SESSION['SEmail'] = $num['Email'];
             $_SESSION['SSodienthoai'] = $num['SoDienThoai'];
             $_SESSION['SQuyenAdmin'] = $num['QuyenAdmin'];
-            echo "<script>window.location.href='../" . $extra . "'</script>";
+            echo "<script>window.location.href='../" . "index.php" . "'</script>";
             exit();
         } else {
             $_SESSION['action1'] = "Tên đăng nhập hoặc mật khẩu sai";
-            $extra = "index.php";
-            echo "<script>window.location.href='" . $extra . "'</script>";
+            echo "<script>window.location.href='" . "index.php" . "'</script>";
             exit();
         }
     }
