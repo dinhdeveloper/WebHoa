@@ -1,8 +1,7 @@
 <?php
 	//include_once '../../../../libs/database.php';
-    if (isset($_POST['taosanpham'])) {
+    if (isset($_POST['taoloaisanpham'])) {
         $tenloaisanpham = $_POST['tenloaisanpham'];
-        $ngaynhap = $_POST['ngaynhap'];
         if (isset($_FILES['hinhanh'])) {
             $errors = array();
             $file_name = $_FILES['hinhanh']['name'];
@@ -19,12 +18,12 @@
             }
         }
         $hinhanh = $_FILES['hinhanh']['name'];
-        if ($tenloaisanpham == "" || $ngaynhap == "") {
+        if ($tenloaisanpham == "") {
             echo '<script>alert("Vui lòng nhập đầy đủ trường thông tin")</script>';
         }
         else{
-        	$sql ="INSERT INTO loaisanpham(MaLoaiSanPham,HinhMinhHoaLSP,TenLoaiSanPham,NgayNhap,BiXoa)
-					VALUES (null,'$hinhanh','$tenloaisanpham','$ngaynhap',0)";
+        	$sql ="INSERT INTO loaisanpham(MaLoaiSanPham,HinhMinhHoaLSP,TenLoaiSanPham)
+					VALUES (null,'$hinhanh','$tenloaisanpham')";
             $result = DataProvider::ExecuteQuery($sql);
             if ($result) {
                 echo '<script>alert("Tạo LSP thành công")</script>';
@@ -48,15 +47,11 @@
 <!--				   placeholder="Mã loại sản phẩm">-->
 <!--		</div>-->
 		<div class="form-group col-md-4">
-			<label for="ngaynhap"><strong><h6>Ngày Nhập</h6></strong></label>
-			<input type="date" class="form-control" id="ngaynhap" name="ngaynhap">
-		</div>
-		<div class="form-group col-md-4">
 			<label for="hinhurl"><strong><h6>Hình Đại Diện Loại Sản Phẩm</h6></strong></label>
 			<input type="file" class="form-control-file" id="hinhurl" name="hinhanh">
 		</div>
 		<br>
-		<button type="submit" class="btn btn-primary" name="taosanpham">Tạo loại sản phẩm</button>
+		<button type="submit" class="btn btn-primary" name="taoloaisanpham">Tạo loại sản phẩm</button>
 	</form>
 </div>
 <br>
