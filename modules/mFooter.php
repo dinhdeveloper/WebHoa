@@ -1,8 +1,9 @@
 ﻿<div class="mini-icon" style=" position: fixed; bottom: 20px; left: 0;z-index: 999999 ">
-    <a href="#"><img src="images/icon/mess.png" alt=""></a>
-    <a href="#"><img src="images/icon/map.png" alt=""></a>
-    <a href="#"><img src="images/icon/sms.png" alt=""></a>
-    <a href="#"><img src="images/icon/hotline.png" alt=""></a>
+    <a href="https://www.messenger.com/t/canhdinhit" target="_blank" style="margin-left: 10px"><img src="images/icon/mess.png" alt=""></a>
+<!--    <a href="https://www.google.com/maps/place/212+Nguy%E1%BB%85n+%C4%90%C3%ACnh+Chi%E1%BB%83u,+Ph%C6%B0%E1%BB%9Dng+6,+Qu%E1%BA%ADn+3,+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam/@10.7787659,106.6878343,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f3a9d92c4a7:0x6293396afcadc8a5!8m2!3d10.7787659!4d106.690023" target="_blank"><img src="images/icon/map.png" alt=""></a>-->
+<!--    <a href=""><img src="images/icon/map.png" alt=""></a>-->
+<!--    <a href="tel:"><img src="images/icon/sms.png" alt=""></a>-->
+<!--    <a href="#"><img src="images/icon/hotline.png" alt=""></a>-->
 </div>
 <br><div class="" style="background-color: #1C252C">
     <!-- Footer -->
@@ -55,10 +56,11 @@
                     <!-- Links -->
                     <h5 class="text-uppercase">Thông tin liên lạc</h5><br>
                     <div>
-                        <img src="images/icon/home.png" alt="">  860, D2 Bình Thạnh, TP HCM
+                        <img src="images/icon/home.png" alt="">
+                        <a href="https://www.google.com/maps/place/212+Nguy%E1%BB%85n+%C4%90%C3%ACnh+Chi%E1%BB%83u,+Ph%C6%B0%E1%BB%9Dng+6,+Qu%E1%BA%ADn+3,+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam/@10.7787659,106.6878343,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f3a9d92c4a7:0x6293396afcadc8a5!8m2!3d10.7787659!4d106.690023" target="_blank">212 Nguyễn Đình Chiểu, Q.3, TP.HCM</a>
                     </div><br>
                     <div>
-                        <img src="images/icon/email.png" alt=""> Dinhtrancntt@gmail.com
+                        <img src="images/icon/email.png" alt=""> <a href="mailto:Dinhtrancntt@gmail.com">Dinhtrancntt@gmail.com</a>
                     </div><br>
                     <div>
                         <img src="images/icon/phone.png" alt="">
