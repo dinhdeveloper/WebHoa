@@ -1,4 +1,5 @@
-<h4 style="color: red"><marquee scrollamount="5" behavior="alternate">CHÀO MỪNG BẠN ĐẾN VỚI TRANG QUẢN LÝ</marquee></h4>
+<h4 style="color: red"><marquee scrollamount="1" behavior="alternate">CHÀO MỪNG BẠN ĐẾN VỚI TRANG QUẢN LÝ</marquee></h4>
+
 <section id="content">
     <!--start container-->
     <div class="container">

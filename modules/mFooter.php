@@ -1,4 +1,10 @@
-﻿<br><div class="" style="background-color: #1C252C">
+﻿<div class="mini-icon" style=" position: fixed; bottom: 20px; left: 0;z-index: 999999 ">
+    <img src="images/icon/mess.png" alt="">
+    <img src="images/icon/map.png" alt="">
+    <img src="images/icon/sms.png" alt="">
+    <img src="images/icon/hotline.png" alt="">
+</div>
+<br><div class="" style="background-color: #1C252C">
     <!-- Footer -->
     <footer class="page-footer font-small blue pt-4 mt-4" style="color: white">
         <!-- Footer Links -->

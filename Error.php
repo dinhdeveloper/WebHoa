@@ -1,7 +1,7 @@
 <script language="JavaScript">
     alert("Quậy web bố hả mày");
 </script>
-<h1>Quay ha BUOI!!!</h1>
+<h1>404</h1>
 <?php
 	$err_id = 1;
 	if(isset($_GET["err_id"])){

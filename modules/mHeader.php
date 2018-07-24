@@ -5,9 +5,10 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="row img-row">
-                    <a href="https://facebook.com/canhdinhit"target="_blank"><img src="images/icon/icons8-facebook-30.png" alt=""></a>&nbsp;&nbsp;
-                    <a href="#"><img src="images/icon/icons8-instagram-30.png" alt=""></a>&nbsp;&nbsp;
-                    <a href="#"><img src="images/icon/icons8-twitter-26.png" alt=""></a>&nbsp;&nbsp;
+                    <a href="https://facebook.com/canhdinhit"target="_blank">
+                        <img src="images/icon/square-facebook-128.png" style="height: 30px" width="auto"></a>&nbsp;&nbsp;
+                    &nbsp;<a href="#"><img src="images/icon/Instagram-128.png" style="height: 30px" width="auto"></a>&nbsp;&nbsp;
+                    &nbsp;<a href="#"><img src="images/icon/twitter-128.png" style="height: 30px" width="auto"></a>&nbsp;&nbsp;&nbsp;
                 </div>
             </div>
             <div class="col-md-4">
