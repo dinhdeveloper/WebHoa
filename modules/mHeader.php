@@ -1,5 +1,3 @@
-<script type="text/javascript" src="../js/jquery/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="../js/jquery/jquery-3.3.1.js"></script>
 <header id="header">
     <div class="top-header">
         <div class="row">

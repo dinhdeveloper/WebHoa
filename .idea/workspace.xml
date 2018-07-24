@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17745fc1-6028-497f-988b-1f89c4befed7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/mFooter.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mFooter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pDanhmucsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pDanhmucsanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/mHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mHeader.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,13 +14,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="24" column="72" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="24" selection-end-column="72" />
+            <state relative-caret-position="216">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mHeader.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/mHeader.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -88,7 +92,6 @@
         <option value="$PROJECT_DIR$/pages/pSanphamxemnhieunhat.php" />
         <option value="$PROJECT_DIR$/js/hieuung.js" />
         <option value="$PROJECT_DIR$/Error.php" />
-        <option value="$PROJECT_DIR$/modules/mHeader.php" />
         <option value="$PROJECT_DIR$/modules/mHotrokhachhang.php" />
         <option value="$PROJECT_DIR$/Admin/Login/index.php" />
         <option value="$PROJECT_DIR$/Admin/modules/menu_left.php" />
@@ -96,6 +99,7 @@
         <option value="$PROJECT_DIR$/modules/mFooter.php" />
         <option value="$PROJECT_DIR$/pages/pDanhmucsanpham.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/modules/mHeader.php" />
       </list>
     </option>
   </component>
@@ -143,17 +147,6 @@
             <path>
               <item name="WebHoa" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebHoa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebHoa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebHoa" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebHoa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebHoa" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebHoa" type="b2602c69:ProjectViewProjectNode" />
@@ -235,18 +228,18 @@
       <workItem from="1532358643602" duration="3000" />
       <workItem from="1532360977616" duration="9073000" />
       <workItem from="1532371972748" duration="1522000" />
-      <workItem from="1532396643368" duration="10534000" />
+      <workItem from="1532396643368" duration="10682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116123000" />
+    <option name="totallyTimeSpent" value="116271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18078668" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.18078668" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50075644" side_tool="true" weight="0.42207792" />
@@ -267,6 +260,28 @@
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="6" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18078668" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="12" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49924356" weight="0.42207792" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.39935064" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50075644" side_tool="true" weight="0.42207792" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -520,13 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mHeader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/mHotrokhachhang.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -575,10 +583,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="24" column="72" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="24" selection-end-column="72" />
+        <state relative-caret-position="216">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mHeader.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

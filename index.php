@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery/jquery-3.3.1.js"></script>
-    <script type='text/javascript' src="js/hieuungtuyetroi.js"></script>
+    <script type="text/javascript" src="js/hieuungtuyetroi.js"></script>
 </head>
 <body style="overflow-x: hidden;">
 <?php include 'modules/mHeader.php'; ?>
